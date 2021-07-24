@@ -10,10 +10,13 @@ public class MoodAnalyzer {
 
     public String analyseMood() throws MoodAnalysisException {
         try {
-            if (message == "")
+            if (message == "") {
                 throw new MoodAnalysisException("Invalid message", MoodAnalysisException.ExceptionType.ENTERED_EMPTY);
-            if (message.toLowerCase().contains("sad"))
+            }
+
+            if (message.toLowerCase().contains("sad")) {
                 return "SAD";
+            }
             return "HAPPY";
         } catch (NullPointerException e) {
             throw new MoodAnalysisException("Invalid message", MoodAnalysisException.ExceptionType.ENTERED_NULL);
