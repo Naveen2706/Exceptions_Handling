@@ -42,6 +42,6 @@ public class UserRegistration {
         System.out.println(person.emailValidation("abc.100@abc.com.au"));
         System.out.println(person.emailValidation("abc@1.com"));
         System.out.println(person.emailValidation("abc@gmail.com.com"));
-           System.out.println(person.emailValidation("abc+100@gmail.com"));
+        System.out.println(person.emailValidation("abc+100@gmail.com"));
     }
 }

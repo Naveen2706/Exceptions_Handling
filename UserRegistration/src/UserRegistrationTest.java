@@ -10,9 +10,11 @@ class UserRegistrationTest {
     @Test
     void firstNameTest() throws InvalidFirstNameTestException {
         try {
+
             boolean check = userObj.firstNameValidation("en");
             if (check) {
                 assertTrue(check);
+
             } else
                 throw new InvalidFirstNameTestException("Enter Correct First Name");
         } catch (InvalidFirstNameTestException e) {
